@@ -3,145 +3,296 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>طلب ذبيحة - وليد خالد بخاري</title>
+<title>ذبايح أبو خالد</title>
 
 <style>
+:root {
+  --green: #0b3d2e;
+  --green2: #145c43;
+  --gold: #c8a45d;
+  --cream: #f7f1e5;
+  --dark: #1f1f1f;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial;
-    background: #f7f7f7;
-    margin: 0;
+  margin: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  background: linear-gradient(180deg, var(--green), #06251c);
+  color: var(--dark);
 }
 
-.container {
-    max-width: 600px;
-    margin: auto;
-    background: white;
-    padding: 20px;
+.page {
+  max-width: 680px;
+  margin: auto;
+  padding: 18px;
 }
 
-h1 {
-    text-align: center;
+.hero {
+  text-align: center;
+  color: var(--white);
+  padding: 36px 18px 24px;
+  border-bottom: 1px solid rgba(200,164,93,0.4);
+}
+
+.badge {
+  display: inline-block;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 7px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 36px;
+  color: var(--white);
+  letter-spacing: -1px;
+}
+
+.hero h2 {
+  margin: 10px 0 0;
+  font-size: 22px;
+  color: var(--gold);
+  font-weight: bold;
+}
+
+.hero p {
+  margin: 16px auto 0;
+  line-height: 1.8;
+  color: #f3ead8;
+  font-size: 16px;
+}
+
+.card {
+  background: var(--cream);
+  border-radius: 24px;
+  padding: 22px;
+  margin-top: 22px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.25);
+  border: 1px solid rgba(200,164,93,0.45);
+}
+
+.section-title {
+  font-size: 20px;
+  margin: 0 0 14px;
+  color: var(--green);
+  border-right: 5px solid var(--gold);
+  padding-right: 10px;
 }
 
 label {
-    font-weight: bold;
-    margin-top: 15px;
-    display: block;
+  font-weight: bold;
+  margin-top: 16px;
+  display: block;
+  color: var(--green);
 }
 
 input, select, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
+  width: 100%;
+  padding: 14px;
+  margin-top: 7px;
+  border-radius: 14px;
+  border: 1px solid #d6c7aa;
+  background: #fffdf8;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--gold);
+}
+
+textarea {
+  min-height: 90px;
 }
 
 button {
-    width: 100%;
-    padding: 15px;
-    background: #0a7d3b;
-    color: white;
-    border: none;
-    margin-top: 20px;
-    font-size: 18px;
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, var(--green), var(--green2));
+  color: white;
+  border: none;
+  border-radius: 16px;
+  margin-top: 22px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.whatsapp {
-    margin-top: 15px;
-    text-align: center;
+button:hover {
+  opacity: 0.95;
+}
+
+.trust {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.trust div {
+  background: #fffdf8;
+  border: 1px solid #e3d4b7;
+  border-radius: 16px;
+  padding: 12px;
+  text-align: center;
+  color: var(--green);
+  font-weight: bold;
+}
+
+.contact {
+  text-align: center;
+  margin-top: 18px;
+  line-height: 1.8;
+  color: var(--green);
+}
+
+.footer {
+  text-align: center;
+  color: #f3ead8;
+  font-size: 13px;
+  margin: 22px 0 10px;
+}
+
+@media (max-width: 520px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero h2 {
+    font-size: 19px;
+  }
+
+  .trust {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
-
 </head>
 
 <body>
 
-<div class="container">
+<div class="page">
 
-<h1>طلب ذبيحة 🐑</h1>
-<p style="text-align:center;">
-ذبائح طازجة – ذبح يومي – توصيل حسب الطلب
-</p>
+  <div class="hero">
+    <div class="badge">جودة • كرم • توصيل حسب الطلب</div>
+    <h1>ذبايح أبو خالد</h1>
+    <h2>ذبيحتك توصلك من جوالك</h2>
+    <p>
+      اختر نوع الذبيحة وطريقة التقطيع وموعد التسليم، ونرتب طلبك بكل عناية وجودة.
+    </p>
+  </div>
 
-<form id="orderForm">
+  <div class="card">
+    <h3 class="section-title">تفاصيل الطلب</h3>
 
-<label>نوع الذبيحة</label>
-<select id="type">
-<option>حري</option>
-<option>سواكني</option>
-</select>
+    <form id="orderForm">
 
-<label>الوزن</label>
-<select id="weight">
-<option>صغير (15-20)</option>
-<option>متوسط (20-25)</option>
-<option>كبير (25+)</option>
-</select>
+      <label>نوع الذبيحة</label>
+      <select id="type" required>
+        <option value="">اختر نوع الذبيحة</option>
+        <option>حري</option>
+        <option>سواكني</option>
+      </select>
 
-<label>طريقة التقطيع</label>
-<select id="cut">
-<option>ثلاجة</option>
-<option>حضرمي</option>
-<option>أرباع</option>
-<option>مفاصل</option>
-</select>
+      <label>الوزن التقريبي</label>
+      <select id="weight" required>
+        <option value="">اختر الوزن</option>
+        <option>صغير (15-20 كجم)</option>
+        <option>متوسط (20-25 كجم)</option>
+        <option>كبير (25 كجم وأكثر)</option>
+      </select>
 
-<label>تاريخ التسليم</label>
-<input type="date" id="date">
+      <label>طريقة التقطيع</label>
+      <select id="cut" required>
+        <option value="">اختر طريقة التقطيع</option>
+        <option>ثلاجة</option>
+        <option>حضرمي</option>
+        <option>أرباع</option>
+        <option>مفاصل</option>
+      </select>
 
-<label>وقت الذبح</label>
-<select id="time">
-<option>صباح</option>
-<option>ظهر</option>
-<option>عصر</option>
-</select>
+      <label>تاريخ التسليم المتوقع</label>
+      <input type="date" id="date" required>
 
-<label>الاسم</label>
-<input type="text" id="name">
+      <label>موعد الذبح</label>
+      <select id="time" required>
+        <option value="">اختر موعد الذبح</option>
+        <option>صباح</option>
+        <option>ظهر</option>
+        <option>عصر</option>
+      </select>
 
-<label>رقم الجوال</label>
-<input type="text" id="phone">
+      <h3 class="section-title" style="margin-top:28px;">بيانات التواصل</h3>
 
-<label>ملاحظات</label>
-<textarea id="notes"></textarea>
+      <label>اسم العميل</label>
+      <input type="text" id="name" placeholder="اكتب اسمك" required>
 
-<button type="button" onclick="sendWhatsApp()">إرسال الطلب</button>
+      <label>رقم الجوال</label>
+      <input type="tel" id="phone" placeholder="05xxxxxxxx" required>
 
-</form>
+      <label>ملاحظات إضافية</label>
+      <textarea id="notes" placeholder="مثال: طلب خاص بالتقطيع أو وقت تسليم محدد"></textarea>
 
-<div class="whatsapp">
-أو تواصل مباشرة: <br>
-<strong>وليد خالد بخاري – 0530856858</strong>
-</div>
+      <button type="button" onclick="sendWhatsApp()">إرسال الطلب على واتساب</button>
+
+    </form>
+
+    <div class="trust">
+      <div>ذبائح مختارة بعناية</div>
+      <div>تقطيع حسب الطلب</div>
+      <div>تواصل مباشر</div>
+      <div>تسليم مرتب</div>
+    </div>
+
+    <div class="contact">
+      للتواصل المباشر<br>
+      <strong>0530856858</strong>
+    </div>
+  </div>
+
+  <div class="footer">
+    ذبايح أبو خالد — كرم وجود من أرض المملكة
+  </div>
 
 </div>
 
 <script>
 function sendWhatsApp() {
+  let type = document.getElementById("type").value;
+  let weight = document.getElementById("weight").value;
+  let cut = document.getElementById("cut").value;
+  let date = document.getElementById("date").value;
+  let time = document.getElementById("time").value;
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let notes = document.getElementById("notes").value;
 
-let type = document.getElementById("type").value;
-let weight = document.getElementById("weight").value;
-let cut = document.getElementById("cut").value;
-let date = document.getElementById("date").value;
-let time = document.getElementById("time").value;
-let name = document.getElementById("name").value;
-let phone = document.getElementById("phone").value;
-let notes = document.getElementById("notes").value;
+  if (!type || !weight || !cut || !date || !time || !name || !phone) {
+    alert("فضلاً أكمل البيانات المطلوبة قبل إرسال الطلب");
+    return;
+  }
 
-let message = 
-"طلب ذبيحة:%0A" +
-"النوع: " + type + "%0A" +
-"الوزن: " + weight + "%0A" +
-"التقطيع: " + cut + "%0A" +
-"التسليم: " + date + "%0A" +
-"الوقت: " + time + "%0A" +
-"الاسم: " + name + "%0A" +
-"الجوال: " + phone + "%0A" +
-"ملاحظات: " + notes;
+  let message =
+  "طلب جديد من موقع ذبايح أبو خالد:%0A%0A" +
+  "نوع الذبيحة: " + type + "%0A" +
+  "الوزن التقريبي: " + weight + "%0A" +
+  "طريقة التقطيع: " + cut + "%0A" +
+  "تاريخ التسليم المتوقع: " + date + "%0A" +
+  "موعد الذبح: " + time + "%0A%0A" +
+  "اسم العميل: " + name + "%0A" +
+  "رقم الجوال: " + phone + "%0A" +
+  "ملاحظات: " + notes;
 
-let url = "https://wa.me/966530856858?text=" + message;
-
-window.open(url, "_blank");
-
+  let url = "https://wa.me/966530856858?text=" + message;
+  window.open(url, "_blank");
 }
 </script>
 
