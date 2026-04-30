@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>طلب ذبيحة - وليد خالد بخاري</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: #f7f7f7;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: #0a7d3b;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.whatsapp {
+    margin-top: 15px;
+    text-align: center;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>طلب ذبيحة 🐑</h1>
+<p style="text-align:center;">
+ذبائح طازجة – ذبح يومي – توصيل حسب الطلب
+</p>
+
+<form id="orderForm">
+
+<label>نوع الذبيحة</label>
+<select id="type">
+<option>حري</option>
+<option>سواكني</option>
+</select>
+
+<label>الوزن</label>
+<select id="weight">
+<option>صغير (15-20)</option>
+<option>متوسط (20-25)</option>
+<option>كبير (25+)</option>
+</select>
+
+<label>طريقة التقطيع</label>
+<select id="cut">
+<option>ثلاجة</option>
+<option>حضرمي</option>
+<option>أرباع</option>
+<option>مفاصل</option>
+</select>
+
+<label>تاريخ التسليم</label>
+<input type="date" id="date">
+
+<label>وقت الذبح</label>
+<select id="time">
+<option>صباح</option>
+<option>ظهر</option>
+<option>عصر</option>
+</select>
+
+<label>الاسم</label>
+<input type="text" id="name">
+
+<label>رقم الجوال</label>
+<input type="text" id="phone">
+
+<label>ملاحظات</label>
+<textarea id="notes"></textarea>
+
+<button type="button" onclick="sendWhatsApp()">إرسال الطلب</button>
+
+</form>
+
+<div class="whatsapp">
+أو تواصل مباشرة: <br>
+<strong>وليد خالد بخاري – 0530856858</strong>
+</div>
+
+</div>
+
+<script>
+function sendWhatsApp() {
+
+let type = document.getElementById("type").value;
+let weight = document.getElementById("weight").value;
+let cut = document.getElementById("cut").value;
+let date = document.getElementById("date").value;
+let time = document.getElementById("time").value;
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+let notes = document.getElementById("notes").value;
+
+let message = 
+"طلب ذبيحة:%0A" +
+"النوع: " + type + "%0A" +
+"الوزن: " + weight + "%0A" +
+"التقطيع: " + cut + "%0A" +
+"التسليم: " + date + "%0A" +
+"الوقت: " + time + "%0A" +
+"الاسم: " + name + "%0A" +
+"الجوال: " + phone + "%0A" +
+"ملاحظات: " + notes;
+
+let url = "https://wa.me/966530856858?text=" + message;
+
+window.open(url, "_blank");
+
+}
+</script>
+
+</body>
+</html>
