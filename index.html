@@ -1,300 +1,301 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ذبايح أبو خالد</title>
-
-<style>
-:root {
-  --green: #0b3d2e;
-  --green2: #145c43;
-  --gold: #c8a45d;
-  --cream: #f7f1e5;
-  --dark: #1f1f1f;
-  --white: #ffffff;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Tahoma, Arial, sans-serif;
-  background: linear-gradient(180deg, var(--green), #06251c);
-  color: var(--dark);
-}
-
-.page {
-  max-width: 680px;
-  margin: auto;
-  padding: 18px;
-}
-
-.hero {
-  text-align: center;
-  color: var(--white);
-  padding: 36px 18px 24px;
-  border-bottom: 1px solid rgba(200,164,93,0.4);
-}
-
-.badge {
-  display: inline-block;
-  border: 1px solid var(--gold);
-  color: var(--gold);
-  padding: 7px 16px;
-  border-radius: 999px;
-  font-size: 14px;
-  margin-bottom: 16px;
-}
-
-.hero h1 {
-  margin: 0;
-  font-size: 36px;
-  color: var(--white);
-  letter-spacing: -1px;
-}
-
-.hero h2 {
-  margin: 10px 0 0;
-  font-size: 22px;
-  color: var(--gold);
-  font-weight: bold;
-}
-
-.hero p {
-  margin: 16px auto 0;
-  line-height: 1.8;
-  color: #f3ead8;
-  font-size: 16px;
-}
-
-.card {
-  background: var(--cream);
-  border-radius: 24px;
-  padding: 22px;
-  margin-top: 22px;
-  box-shadow: 0 18px 45px rgba(0,0,0,0.25);
-  border: 1px solid rgba(200,164,93,0.45);
-}
-
-.section-title {
-  font-size: 20px;
-  margin: 0 0 14px;
-  color: var(--green);
-  border-right: 5px solid var(--gold);
-  padding-right: 10px;
-}
-
-label {
-  font-weight: bold;
-  margin-top: 16px;
-  display: block;
-  color: var(--green);
-}
-
-input, select, textarea {
-  width: 100%;
-  padding: 14px;
-  margin-top: 7px;
-  border-radius: 14px;
-  border: 1px solid #d6c7aa;
-  background: #fffdf8;
-  font-size: 16px;
-  outline: none;
-}
-
-input:focus, select:focus, textarea:focus {
-  border-color: var(--gold);
-}
-
-textarea {
-  min-height: 90px;
-}
-
-button {
-  width: 100%;
-  padding: 16px;
-  background: linear-gradient(135deg, var(--green), var(--green2));
-  color: white;
-  border: none;
-  border-radius: 16px;
-  margin-top: 22px;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-button:hover {
-  opacity: 0.95;
-}
-
-.trust {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-top: 18px;
-}
-
-.trust div {
-  background: #fffdf8;
-  border: 1px solid #e3d4b7;
-  border-radius: 16px;
-  padding: 12px;
-  text-align: center;
-  color: var(--green);
-  font-weight: bold;
-}
-
-.contact {
-  text-align: center;
-  margin-top: 18px;
-  line-height: 1.8;
-  color: var(--green);
-}
-
-.footer {
-  text-align: center;
-  color: #f3ead8;
-  font-size: 13px;
-  margin: 22px 0 10px;
-}
-
-@media (max-width: 520px) {
-  .hero h1 {
-    font-size: 30px;
-  }
-
-  .hero h2 {
-    font-size: 19px;
-  }
-
-  .trust {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#163522" />
+  <meta name="description" content="ذبائح أبو خالد - حري وسواكني، ذبح شرعي، تقطيع حسب الطلب، وتوصيل مبرد إلى باب بيتك." />
+  <title>ذبائح أبو خالد | حري وسواكني</title>
+  <link rel="preload" href="assets/hero/hero-animals.png" as="image" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <a class="skip-link" href="#order">انتقل إلى الطلب</a>
 
-<div class="page">
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="ذبائح أبو خالد">
+        <img src="assets/logo/logo.png" alt="شعار ذبائح أبو خالد" width="92" height="92" />
+        <span>
+          <strong>ذبائح أبو خالد</strong>
+          <small>حري وسواكني</small>
+        </span>
+      </a>
 
-  <div class="hero">
-    <div class="badge">جودة • كرم • توصيل حسب الطلب</div>
-    <h1>ذبايح أبو خالد</h1>
-    <h2>ذبيحتك توصلك من جوالك</h2>
-    <p>
-      اختر نوع الذبيحة وطريقة التقطيع وموعد التسليم، ونرتب طلبك بكل عناية وجودة.
-    </p>
-  </div>
+      <button class="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
 
-  <div class="card">
-    <h3 class="section-title">تفاصيل الطلب</h3>
+      <nav class="main-nav" id="mainNav" aria-label="القائمة الرئيسية">
+        <a href="#top" class="active">الرئيسية</a>
+        <a href="#hari">أنواع الحري</a>
+        <a href="#sawakni">السواكني</a>
+        <a href="#cutting">التقطيع</a>
+        <a href="#order">طريقة الطلب</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
 
-    <form id="orderForm">
-
-      <label>نوع الذبيحة</label>
-      <select id="type" required>
-        <option value="">اختر نوع الذبيحة</option>
-        <option>حري</option>
-        <option>سواكني</option>
-      </select>
-
-      <label>الوزن التقريبي</label>
-      <select id="weight" required>
-        <option value="">اختر الوزن</option>
-        <option>صغير (15-20 كجم)</option>
-        <option>متوسط (20-25 كجم)</option>
-        <option>كبير (25 كجم وأكثر)</option>
-      </select>
-
-      <label>طريقة التقطيع</label>
-      <select id="cut" required>
-        <option value="">اختر طريقة التقطيع</option>
-        <option>ثلاجة</option>
-        <option>حضرمي</option>
-        <option>أرباع</option>
-        <option>مفاصل</option>
-      </select>
-
-      <label>تاريخ التسليم المتوقع</label>
-      <input type="date" id="date" required>
-
-      <label>موعد الذبح</label>
-      <select id="time" required>
-        <option value="">اختر موعد الذبح</option>
-        <option>صباح</option>
-        <option>ظهر</option>
-        <option>عصر</option>
-      </select>
-
-      <h3 class="section-title" style="margin-top:28px;">بيانات التواصل</h3>
-
-      <label>اسم العميل</label>
-      <input type="text" id="name" placeholder="اكتب اسمك" required>
-
-      <label>رقم الجوال</label>
-      <input type="tel" id="phone" placeholder="05xxxxxxxx" required>
-
-      <label>ملاحظات إضافية</label>
-      <textarea id="notes" placeholder="مثال: طلب خاص بالتقطيع أو وقت تسليم محدد"></textarea>
-
-      <button type="button" onclick="sendWhatsApp()">إرسال الطلب على واتساب</button>
-
-    </form>
-
-    <div class="trust">
-      <div>ذبائح مختارة بعناية</div>
-      <div>تقطيع حسب الطلب</div>
-      <div>تواصل مباشر</div>
-      <div>تسليم مرتب</div>
+      <a class="whatsapp-link header-whatsapp" href="https://wa.me/966530856858" target="_blank" rel="noopener" aria-label="مراسلة واتساب">
+        <span class="wa-icon" aria-hidden="true">☎</span>
+        راسلنا واتساب
+      </a>
     </div>
+  </header>
 
-    <div class="contact">
-      للتواصل المباشر<br>
-      <strong>0530856858</strong>
+  <main>
+    <section class="hero" aria-label="الواجهة الرئيسية">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">حري وسواكني</p>
+          <h1>ذبائح أبو خالد</h1>
+          <p class="hero-slogan">ذبيحتك من المسلخ إلى باب بيتك</p>
+          <p class="hero-desc">حري وسواكني، ذبح شرعي، تقطيع حسب الطلب، وتوصيل مبرد.</p>
+
+          <div class="hero-features" aria-label="مزايا الخدمة">
+            <div class="feature-mini">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10l8-6 8 6v10h-5v-6H9v6H4Zm2-2h1v-6h10v6h1v-7l-6-4.5L6 11v7Z"/></svg>
+              <span>ذبح شرعي</span>
+            </div>
+            <div class="feature-mini">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 17.25 9.9-9.9 3.75 3.75-9.9 9.9H3v-3.75Zm2 1.75h.9l7.9-7.9-.9-.9L5 18.1v.9ZM14.3 5.95l1.4-1.4a1.9 1.9 0 0 1 2.7 0l1.05 1.05a1.9 1.9 0 0 1 0 2.7l-1.4 1.4-3.75-3.75Z"/></svg>
+              <span>تقطيع حسب الطلب</span>
+            </div>
+            <div class="feature-mini">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h12v3h3l3 4v5h-2a3 3 0 0 1-6 0H9a3 3 0 0 1-6 0H2V8a2 2 0 0 1 1-2Zm2 2v7.1A3 3 0 0 1 8.8 17H14V8H5Zm11 3v4h3v-1.35L17.1 11H16ZM6 19a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg>
+              <span>توصيل مبرد</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#order">اطلب الآن</a>
+            <a class="btn btn-ghost" href="#products">تصفح الأنواع</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <img src="assets/hero/hero-animals.png" alt="" loading="eager" />
+        </div>
+      </div>
+    </section>
+
+    <section class="products section" id="products">
+      <div class="container">
+        <div class="section-title">
+          <span></span>
+          <p>اختر نوع الذبيحة</p>
+          <span></span>
+        </div>
+
+        <div class="product-group" id="hari">
+          <h2>أنواع الحري</h2>
+          <div class="product-grid product-grid-four">
+            <article class="product-card" data-product="حري كبير">
+              <img src="assets/products/hari-big.jpg" alt="حري كبير" loading="lazy" />
+              <div class="product-body">
+                <h3>حري كبير</h3>
+                <p>اختيار مناسب للمناسبات والعزائم.</p>
+                <button type="button" class="select-product">اختر النوع</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product="حري جبر">
+              <img src="assets/products/hari-jabr.jpg" alt="حري جبر" loading="lazy" />
+              <div class="product-body">
+                <h3>حري جبر</h3>
+                <p>نفس صورة الحري الكبير حسب التصنيف المعتمد.</p>
+                <button type="button" class="select-product">اختر النوع</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product="حري صغير">
+              <img src="assets/products/hari-small.jpg" alt="حري صغير" loading="lazy" />
+              <div class="product-body">
+                <h3>حري صغير</h3>
+                <p>خيار عملي للطلبات الصغيرة.</p>
+                <button type="button" class="select-product">اختر النوع</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product="حري وسط">
+              <img src="assets/products/hari-medium.jpg" alt="حري وسط" loading="lazy" />
+              <div class="product-body">
+                <h3>حري وسط</h3>
+                <p>نفس صورة الحري الصغير حسب التصنيف المعتمد.</p>
+                <button type="button" class="select-product">اختر النوع</button>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="product-group" id="sawakni">
+          <h2>أنواع السواكني</h2>
+          <div class="product-grid product-grid-three">
+            <article class="product-card" data-product="سواكني حمري جبر">
+              <img src="assets/products/sawakni-hamri-jabr.jpg" alt="سواكني حمري جبر" loading="lazy" />
+              <div class="product-body">
+                <h3>سواكني حمري جبر</h3>
+                <p>لحم سواكني حمري مناسب للطبخ والمناسبات.</p>
+                <button type="button" class="select-product">اختر النوع</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product="سواكني حمري جذع">
+              <img src="assets/products/sawakni-hamri-jadh.jpg" alt="سواكني حمري جذع" loading="lazy" />
+              <div class="product-body">
+                <h3>سواكني حمري جذع</h3>
+                <p>نفس صورة السواكني الحمري جبر حسب التصنيف المعتمد.</p>
+                <button type="button" class="select-product">اختر النوع</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-product="سواكني دمزاني وسط">
+              <img src="assets/products/sawakni-damzani.jpg" alt="سواكني دمزاني وسط" loading="lazy" />
+              <div class="product-body">
+                <h3>سواكني دمزاني وسط</h3>
+                <p>خيار سواكني وسط بخلفية موحدة.</p>
+                <button type="button" class="select-product">اختر النوع</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cutting section" id="cutting">
+      <div class="container">
+        <div class="section-title">
+          <span></span>
+          <p>اختر طريقة التقطيع</p>
+          <span></span>
+        </div>
+        <div class="cut-grid">
+          <button class="cut-card" type="button" data-cut="ثلاجة">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 2v7h10V4H7Zm0 9v7h10v-7H7Zm8-7h1v3h-1V6Zm0 9h1v3h-1v-3Z"/></svg>
+            <strong>ثلاجة</strong>
+            <span>تقطيع إلى قطع مناسبة للتخزين في الثلاجة</span>
+          </button>
+          <button class="cut-card" type="button" data-cut="حضرمي">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10h10a4 4 0 0 1 0 8H7a4 4 0 0 1 0-8Zm0 2a2 2 0 0 0 0 4h10a2 2 0 0 0 0-4H7Zm3-7h4l1 3H9l1-3Zm-2 3h8v2H8V8Z"/></svg>
+            <strong>حضرمي</strong>
+            <span>تقطيع خاص للحضري حسب الرغبة</span>
+          </button>
+          <button class="cut-card" type="button" data-cut="أرباع">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14c3.5-1.3 6-3.8 7.3-7.5l2.1.8c-.5 1.6-1.3 3-2.3 4.3l4.4 4.4c1.1-1.3 2-2.8 2.5-4.6l2 .6c-.8 2.8-2.4 5.1-4.7 7L8 11.7A15 15 0 0 1 4.7 16L4 14Zm8.5-9.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0Z"/></svg>
+            <strong>أرباع</strong>
+            <span>تقطيع إلى أرباع حسب الطلب</span>
+          </button>
+          <button class="cut-card" type="button" data-cut="مفاصل">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 7.5a3 3 0 0 1 4.2 0l3.8 3.8a3 3 0 0 1 0 4.2l-1 1a3 3 0 0 1-4.2 0l-3.8-3.8a3 3 0 0 1 0-4.2l1-1Zm1.4 1.4-1 1a1 1 0 0 0 0 1.4l3.8 3.8a1 1 0 0 0 1.4 0l1-1a1 1 0 0 0 0-1.4l-3.8-3.8a1 1 0 0 0-1.4 0ZM5 17a2 2 0 1 1 0-4 2 2 0 0 1 0 4Zm14-6a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg>
+            <strong>مفاصل</strong>
+            <span>تقطيع إلى مفاصل حسب الطلب</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="order section" id="order">
+      <div class="container">
+        <div class="order-panel">
+          <div class="section-title light">
+            <span></span>
+            <p>اطلب ذبيحتك الآن</p>
+            <span></span>
+          </div>
+
+          <form class="order-form" id="orderForm" novalidate>
+            <label>
+              <span>الاسم الكامل</span>
+              <input id="customerName" type="text" autocomplete="name" placeholder="اكتب اسمك" />
+            </label>
+            <label>
+              <span>رقم الجوال</span>
+              <input id="customerPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="05xxxxxxxx" />
+            </label>
+            <label>
+              <span>نوع الذبيحة</span>
+              <select id="productType">
+                <option value="">اختر النوع</option>
+                <option>حري كبير</option>
+                <option>حري جبر</option>
+                <option>حري صغير</option>
+                <option>حري وسط</option>
+                <option>سواكني حمري جبر</option>
+                <option>سواكني حمري جذع</option>
+                <option>سواكني دمزاني وسط</option>
+              </select>
+            </label>
+            <label>
+              <span>طريقة التقطيع</span>
+              <select id="cutType">
+                <option value="">اختر طريقة التقطيع</option>
+                <option>ثلاجة</option>
+                <option>حضرمي</option>
+                <option>أرباع</option>
+                <option>مفاصل</option>
+                <option>كامل</option>
+              </select>
+            </label>
+            <label>
+              <span>تاريخ التوصيل المتوقع</span>
+              <input id="deliveryDate" type="date" />
+            </label>
+            <label>
+              <span>وقت الذبح</span>
+              <input id="slaughterTime" type="time" />
+            </label>
+            <label class="form-wide">
+              <span>ملاحظات إضافية</span>
+              <textarea id="notes" rows="3" placeholder="اكتب أي ملاحظات خاصة بالطلب"></textarea>
+            </label>
+            <button class="btn btn-gold form-wide" type="submit">
+              إرسال الطلب على واتساب
+            </button>
+            <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="مزايا إضافية">
+      <div class="container benefits-grid">
+        <div>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10l8-6 8 6v10h-5v-6H9v6H4Z"/></svg>
+          <strong>ذبح شرعي</strong>
+          <span>وفق الضوابط الشرعية</span>
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h12v3h3l3 4v5h-2a3 3 0 0 1-6 0H9a3 3 0 0 1-6 0H2V8a2 2 0 0 1 1-2Z"/></svg>
+          <strong>توصيل مبرد</strong>
+          <span>سريع وآمن</span>
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 17.25 9.9-9.9 3.75 3.75-9.9 9.9H3v-3.75Z"/></svg>
+          <strong>تقطيع حسب الطلب</strong>
+          <span>حسب رغبتك</span>
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 9 8l-6 .9 4.5 4.4-1.1 6.2L12 16l5.6 3.5-1.1-6.2L21 8.9 15 8l-3-6Z"/></svg>
+          <strong>جودة مضمونة</strong>
+          <span>نختار لك الأفضل</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <img src="assets/logo/logo.png" alt="شعار ذبائح أبو خالد" loading="lazy" />
+      <h2>ذبائح أبو خالد</h2>
+      <p>حري وسواكني</p>
+      <p>ذبيحتك من المسلخ إلى باب بيتك</p>
+      <a class="footer-phone" href="tel:0530856858">0530856858</a>
     </div>
-  </div>
+  </footer>
 
-  <div class="footer">
-    ذبايح أبو خالد — كرم وجود من أرض المملكة
-  </div>
+  <a class="floating-whatsapp" href="https://wa.me/966530856858" target="_blank" rel="noopener" aria-label="فتح واتساب">☎</a>
+  <button class="back-top" type="button" aria-label="العودة للأعلى">⌃</button>
 
-</div>
-
-<script>
-function sendWhatsApp() {
-  let type = document.getElementById("type").value;
-  let weight = document.getElementById("weight").value;
-  let cut = document.getElementById("cut").value;
-  let date = document.getElementById("date").value;
-  let time = document.getElementById("time").value;
-  let name = document.getElementById("name").value;
-  let phone = document.getElementById("phone").value;
-  let notes = document.getElementById("notes").value;
-
-  if (!type || !weight || !cut || !date || !time || !name || !phone) {
-    alert("فضلاً أكمل البيانات المطلوبة قبل إرسال الطلب");
-    return;
-  }
-
-  let message =
-  "طلب جديد من موقع ذبايح أبو خالد:%0A%0A" +
-  "نوع الذبيحة: " + type + "%0A" +
-  "الوزن التقريبي: " + weight + "%0A" +
-  "طريقة التقطيع: " + cut + "%0A" +
-  "تاريخ التسليم المتوقع: " + date + "%0A" +
-  "موعد الذبح: " + time + "%0A%0A" +
-  "اسم العميل: " + name + "%0A" +
-  "رقم الجوال: " + phone + "%0A" +
-  "ملاحظات: " + notes;
-
-  let url = "https://wa.me/966530856858?text=" + message;
-  window.open(url, "_blank");
-}
-</script>
-
+  <script src="script.js"></script>
 </body>
 </html>
